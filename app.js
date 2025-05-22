@@ -13,32 +13,35 @@ const server = http.createServer((req, res) => {
       <title>Mohammed's AWS App</title>
       <style>
         body {
-          background: linear-gradient(to right, #00c6ff, #0072ff);
-          color: white;
-          font-family: sans-serif;
+          background: linear-gradient(135deg, #1d2b64, #f8cdda);
+          color: #ffffff;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           text-align: center;
-          padding-top: 100px;
+          padding-top: 80px;
           margin: 0;
         }
         h1 {
-          font-size: 2.5rem;
-          padding: 15px;
-          border-radius: 10px;
-          background-color: rgba(255, 255, 255, 0.1);
+          font-size: 2.7rem;
+          padding: 20px 40px;
+          background-color: rgba(255, 255, 255, 0.15);
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
           display: inline-block;
+          margin-bottom: 20px;
         }
         footer {
-          position: absolute;
+          position: fixed;
           bottom: 20px;
           width: 100%;
-          color: #ccc;
-          font-size: 0.8rem;
+          color: #dddddd;
+          font-size: 0.85rem;
+          letter-spacing: 0.5px;
         }
       </style>
     </head>
     <body>
-      <h1>Welcome to Mohammed’s Node App on AWS 🚀</h1>
-      <footer>Built with 💻 on Ubuntu EC2 | by Mohammed Nursefa</footer>
+      <h1>Mohammed Nursefa’s Custom AWS Node App</h1>
+      <footer>Deployed on AWS EC2 | Ubuntu Server | Node.js</footer>
     </body>
     </html>
   `;
@@ -49,5 +52,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`✅ Server running at http://${hostname}:${port}/`);
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
