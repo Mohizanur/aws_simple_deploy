@@ -12,36 +12,44 @@ const server = http.createServer((req, res) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>Mohammed's AWS App</title>
       <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
         body {
-          background: linear-gradient(135deg, #1d2b64, #f8cdda);
-          color: #ffffff;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+          color: #f0f0f0;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           text-align: center;
-          padding-top: 80px;
-          margin: 0;
         }
         h1 {
-          font-size: 2.7rem;
-          padding: 20px 40px;
-          background-color: rgba(255, 255, 255, 0.15);
-          border-radius: 12px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-          display: inline-block;
+          font-size: 3rem;
           margin-bottom: 20px;
+          background: rgba(255, 255, 255, 0.05);
+          padding: 20px 40px;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
         footer {
           position: fixed;
           bottom: 20px;
           width: 100%;
-          color: #dddddd;
-          font-size: 0.85rem;
+          text-align: center;
+          font-size: 0.9rem;
+          color: #aaa;
           letter-spacing: 0.5px;
         }
       </style>
     </head>
     <body>
-      <h1>Mohammed Nursefa’s Custom AWS Node App</h1>
-      <footer>Deployed on AWS EC2 | Ubuntu Server | Node.js</footer>
+      <h1>Welcome to Mohammed’s AWS Node App</h1>
+      <footer>Powered by Node.js on AWS EC2 | Designed by Mohammed Nursefa</footer>
     </body>
     </html>
   `;
@@ -52,5 +60,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`✅ Server running at http://${hostname}:${port}/`);
 });
