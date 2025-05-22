@@ -1,0 +1,11 @@
+{
+  "name": "mohammed-node-aws-app",
+  "version": "1.0.0",
+  "description": "A custom Node.js app by Mohammed, deployed on AWS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Mohammed Nursefa",
+  "license": "MIT"
+}
